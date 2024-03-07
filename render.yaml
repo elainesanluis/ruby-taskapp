@@ -1,12 +1,12 @@
 databases:
-  - name: taskapp
+  - name: task
     databaseName: task
-    user: taskapp
+    user: task
     plan: free
 
 services:
   - type: web
-    name: taskapp
+    name: task
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
