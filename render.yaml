@@ -1,6 +1,6 @@
 databases:
   - name: taskapp
-    databaseName: taskapp
+    databaseName: mysite
     user: mysite
     plan: free
 
