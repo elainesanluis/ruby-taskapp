@@ -1,0 +1,38 @@
+<!-- app/views/taskapps/_form.html.erb -->
+<%= form_with(model: [@category, @taskapp], local: true) do |form| %>
+  <% if @taskapp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@taskapp.errors.count, "error") %> prohibited this taskapp from being saved:</h2>
+
+      <ul>
+        <% @taskapp.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, required: true %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, required: true %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.select :status, ['Not Started', 'In Progress', 'Completed'], { required: true }, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :due_date %>
+    <%= form.date_field :due_date, required: true %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

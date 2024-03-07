@@ -1,0 +1,29 @@
+<!-- app/views/taskapps/show.html.erb -->
+
+<p>
+  <strong>Title:</strong>
+  <%= @taskapp.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @taskapp.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @taskapp.status %>
+</p>
+
+<p>
+  <strong>Due Date:</strong>
+  <%= @taskapp.due_date %>
+</p>
+
+<p>
+  <strong>Action:</strong>
+  <%= @taskapp.action %>
+  <%= link_to 'Edit', edit_category_taskapp_path(@taskapp.category, @taskapp) %>
+</p>
+
+<%= link_to 'Back', category_taskapps_path(@taskapp.category) %>

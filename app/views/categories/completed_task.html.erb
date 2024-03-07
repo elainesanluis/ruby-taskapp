@@ -1,0 +1,21 @@
+<!-- app/views/categories/completed_tasks.html.erb -->
+<h1>Completed Tasks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @completed_taskapps.each do |taskapp| %>
+      <tr>
+        <td><%= taskapp.title %></td>
+        <td><%= taskapp.status %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Back', categories_path %>

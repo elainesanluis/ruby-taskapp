@@ -1,0 +1,16 @@
+<!-- app/views/categories/show.html.erb -->
+
+<h1>Categories</h1>
+<h1><%= @category.name %></h1>
+
+<% if @category.taskapps.present? %>
+  <%= render partial: 'taskapps/index', locals: { category: @category } %>
+<% else %>
+  <p>No tasks available for this category.</p>
+<% end %>
+
+<br>
+<%= link_to 'New Task', new_category_taskapp_path(category_id: @category.id) %>
+<%= link_to 'Back', categories_path %>
+
+

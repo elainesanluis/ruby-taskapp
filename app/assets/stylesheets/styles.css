@@ -1,0 +1,30 @@
+th, tr, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.action {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: right;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+                                                
+}

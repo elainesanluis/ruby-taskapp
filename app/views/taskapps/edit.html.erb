@@ -1,0 +1,11 @@
+<!-- app/views/taskapps/_edit.html.erb -->
+<h1>Edit Taskapp</h1>
+
+<%= render 'form' %>
+
+<% if @taskapp %>
+  <%= link_to 'Show', category_taskapp_path(@taskapp.category, @taskapp) %> |
+  <%= link_to 'Back', category_taskapps_path(@taskapp.category) %>
+<% else %>
+  <p>Taskapp not found.</p>
+<% end %>
