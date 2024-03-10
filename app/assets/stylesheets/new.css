@@ -1,0 +1,33 @@
+
+  .new-category-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid gray; 
+    box-shadow: 2px 2px 5px gray;
+    padding: 50px;
+    border-radius: 8px;
+    width: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .new-category-h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+  
+  .new-category-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .new-back-link {
+    color: gray;
+    font-weight: 800;
+  }

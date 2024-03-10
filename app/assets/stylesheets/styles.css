@@ -1,6 +1,7 @@
 th, tr, td {
     border: 1px solid black;
     text-align: center;
+    border-radius: 5px;
 }
 
 .action {
@@ -18,6 +19,7 @@ th, tr, td {
     gap: 10px;
     justify-content: right;
     align-items: center;
+    color: black;
 }
 
 a {
@@ -27,4 +29,38 @@ a {
 body {
     font-family: 'Poppins', sans-serif;
                                                 
+}
+
+.notice {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    box-shadow: 2px 2px 2px 2px gray;
+    padding: 5px;
+    font-size: 14px;
+    color: #238d73;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.alert {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: red;
+    font-weight: 800;
+}
+
+.logout, .profile {
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: rgb(80, 26, 80);
+    color: white;
+    padding: 5px 10px 5px 10px ;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(104, 102, 102);
 }

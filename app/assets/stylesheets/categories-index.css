@@ -1,0 +1,26 @@
+.categories-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-task-new-category-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.view-task-new-category {
+    background-color: rgb(65, 49, 64);
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.categories-index-h1 {
+    font-size: 45px;
+}

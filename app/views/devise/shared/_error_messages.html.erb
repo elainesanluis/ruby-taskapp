@@ -1,5 +1,11 @@
+<% if flash[:alert] %>
+  <div id="alert" class="alert">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+
 <% if resource.errors.any? %>
-  <div id="error_explanation" data-turbo-cache="false">
+  <div id="error_explanation" data-turbo-cache="false" class="alert">
     <h2>
       <%= I18n.t("errors.messages.not_saved",
                  count: resource.errors.count,
@@ -11,5 +17,9 @@
         <li><%= message %></li>
       <% end %>
     </ul>
+  </div>
+<% elsif flash[:notice] %>
+  <div id="notice" class="notice">
+    <%= flash[:notice] %>
   </div>
 <% end %>

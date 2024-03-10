@@ -1,0 +1,84 @@
+.login-page {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    border: 1px solid rgb(223, 213, 213);
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(224, 222, 222);
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.login-button {
+    width: 260px;
+    background-color: rgb(101, 60, 139);
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    border: none;
+}
+
+.login-box {
+    width: 120px;
+}
+
+.login-label {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.login-remember {
+    font-size: 16px;
+}
+
+.login-remember-check {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.login-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+a.login-forgot {
+    text-decoration: none;
+    color: black;
+}
+
+a.login-create {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(65, 49, 64);
+    text-align: center;
+    color: whitesmoke;
+}
+
+.login-h1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 85px;
+    right: 45%;
+}
+
+.login-h2 {
+    position: absolute;
+    top:25%;
+    left: 5%;
+    font-size: 40px;
+    right: 45%;
+}
