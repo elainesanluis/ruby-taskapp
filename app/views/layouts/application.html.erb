@@ -29,11 +29,15 @@
       </div>
     <% end %>
 
-    <div class="login">
+    <div class="nav-bar">
       <% if user_signed_in? %>
-        <%= button_to "Profile", edit_user_registration_path, class: "profile" %>
-        <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "logout" %>
-        <% end %>
+        <div class="login-header">
+          <h1 class="login-header-h1">iQuest</h1>
+        </div>
+        <div class="login">
+          <%= button_to "Profile", edit_user_registration_path, class: "profile" %>
+          <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "logout" %>
+      <% end %>
     </div>
     
     <%= yield %>
