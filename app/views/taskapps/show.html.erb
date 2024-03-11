@@ -1,5 +1,6 @@
 <!-- app/views/taskapps/show.html.erb -->
-
+<div class="taskapp-show-task">
+<h1 class="taskapp-show-task-h1">Task</h1>
 <p>
   <strong>Title:</strong>
   <%= @taskapp.title %>
@@ -20,10 +21,10 @@
   <%= @taskapp.due_date %>
 </p>
 
-<p>
-  <strong>Action:</strong>
-  <%= @taskapp.action %>
+
   <%= link_to 'Edit', edit_category_taskapp_path(@taskapp.category, @taskapp) %>
-</p>
+
 
 <%= link_to 'Back', category_taskapps_path(@taskapp.category) %>
+<br/>
+</div>

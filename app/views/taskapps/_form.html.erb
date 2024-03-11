@@ -1,6 +1,6 @@
 <!-- app/views/taskapps/_form.html.erb -->
 <div class="taskapp-form-div">
-<h1>New Task</h1>
+<h1>Task</h1>
 <%= form_with(model: [@category, @taskapp], local: true) do |form| %>
   <% if @taskapp.errors.any? %>
     <div id="error_explanation">
@@ -35,7 +35,7 @@
   </div>
   <br/>
   <div>
-    <%= form.submit "Create Task", class: "taskapp-form-submit" %>
+    <%= form.submit "Update Task", class: "taskapp-form-submit" %>
   </div>
 <% end %>
 <br/>

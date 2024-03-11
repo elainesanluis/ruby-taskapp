@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 15px;
 }
 
 .form-group {
@@ -11,4 +12,24 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.view-all-table {
+    padding: 15px;
+    width: 1000px;
+}
+
+.view-all-form {
+    padding: 15px;
+}
+
+.view-all-td, .view-all-th {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+
+.view-all-th {
+    background-color: rgb(39, 35, 35);
+    color: rgb(243, 234, 234);
 }

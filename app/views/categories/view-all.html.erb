@@ -2,7 +2,7 @@
 <div class="view-all-div">
 <h1>All Tasks</h1>
 
-<%= form_with(url: show_joined_table_categories_path, method: :get) do %>
+<%= form_with(url: show_joined_table_categories_path, method: :get, class: "view-all-form") do %>
   <div class="form-group">
     <%= label_tag 'due_date', 'Filter by Due Date:' %>
     <%= text_field_tag 'due_date', params[:due_date], class: 'form-control', type: 'date' %>
@@ -11,12 +11,12 @@
 <br/>
 <% end %>
 <% if @categories_and_taskapps.present? %>
-  <table class="table">
+  <table class="view-all-table">
     <thead>
       <tr>
-        <th>Category Name</th>
-        <th>Task Title</th>
-        <th>Task Due Date</th>
+        <th class="view-all-th">Category Name</th>
+        <th class="view-all-th">Task Title</th>
+        <th class="view-all-th">Task Due Date</th>
       </tr>
     </thead>
     <tbody>
@@ -24,9 +24,9 @@
         <% category.taskapps.each do |taskapp| %>
           <% if params[:due_date].blank? || taskapp.due_date == params[:due_date].to_date %>
             <tr>
-              <td><%= category.name %></td>
-              <td><%= taskapp.title %></td>
-              <td><%= taskapp.due_date %></td>
+              <td class="view-all-td"><%= category.name %></td>
+              <td class="view-all-td"><%= taskapp.title %></td>
+              <td class="view-all-td"><%= taskapp.due_date %></td>
             </tr>
           <% end %>
         <% end %>
