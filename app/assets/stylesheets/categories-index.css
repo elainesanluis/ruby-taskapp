@@ -1,26 +1,81 @@
-.categories-index {
+.categories-index-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.view-task-new-category-div {
+  }
+  
+  .view-task-new-category-div {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-}
-
-.view-task-new-category {
+    gap: 30px;
+  }
+  
+  .view-task-new-category {
     background-color: rgb(65, 49, 64);
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
     border-radius: 5px;
     font-size: 20px;
     color: white;
-}
+  }
+  
+  .categories-index-h1 {
+    font-size: 50px;
+  }
+  
+  .categories-name-div {
+    height: 80px;
+    width: auto;
+    font-size: 70px;
+  }
+  
+  .categories-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+  }
+  
+  .no-category {
+    color: gray;
+  }
+  
+  .categories-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .category-item {
+    margin-right: 10px; 
+    padding-bottom: 20px;
+  }
+  
+  .category-actions {
+    font-size: 16px;
+    gap: 20px;
+  }
 
-.categories-index-h1 {
-    font-size: 45px;
-}
+  .category-actions-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  a.category-actions-link {
+    color: black;
+  }
+  
+  .category-actions-link {
+    background-color: none;
+  }

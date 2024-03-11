@@ -1,4 +1,6 @@
 <!-- app/views/taskapps/_form.html.erb -->
+<div class="taskapp-form-div">
+<h1>New Task</h1>
 <%= form_with(model: [@category, @taskapp], local: true) do |form| %>
   <% if @taskapp.errors.any? %>
     <div id="error_explanation">
@@ -13,26 +15,28 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label :title, class: "taskapp-form-label" %>
     <%= form.text_field :title, required: true %>
   </div>
-
+  <br/>
   <div class="field">
-    <%= form.label :description %>
+    <%= form.label :description, class: "taskapp-form-label" %>
     <%= form.text_area :description, required: true %>
   </div>
-
+  <br/>
   <div class="field">
-    <%= form.label :status %>
+    <%= form.label :status, class: "taskapp-form-label" %>
     <%= form.select :status, ['Not Started', 'In Progress', 'Completed'], { required: true }, class: 'form-control' %>
   </div>
-
+  <br/>
   <div class="field">
-    <%= form.label :due_date %>
+    <%= form.label :due_date, class: "taskapp-form-label" %>
     <%= form.date_field :due_date, required: true %>
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <br/>
+  <div>
+    <%= form.submit "Create Task", class: "taskapp-form-submit" %>
   </div>
 <% end %>
+<br/>
+<div>

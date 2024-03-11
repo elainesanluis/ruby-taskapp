@@ -1,0 +1,25 @@
+.table, .taskapp-td, .taskapp-tr, .taskapp-th, .taskapp-action {
+    border: 1px solid black;
+}
+
+.taskapp-action, .taskapp-td {
+    width: 150px;
+    text-align: center;
+    gap: 5px;
+}
+
+.taskapp-action-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskapp-index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 1000px;
+}

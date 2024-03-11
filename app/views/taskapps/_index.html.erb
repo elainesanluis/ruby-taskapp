@@ -1,20 +1,21 @@
 <!-- app/views/taskapps/_index.html.erb -->
+<div class="taskapp-index-container">
 <table class="table">
   <thead>
-    <tr>
-      <th>Title</th>
-      <th>Status</th>
-      <th>Due Date</th>
-      <th class="action">Action</th>
+    <tr class="taskapp-tr">
+      <th class="taskapp-th">Title</th>
+      <th class="taskapp-th">Status</th>
+      <th class="taskapp-th">Due Date</th>
+      <th class="taskapp-th">Action</th>
     </tr>
   </thead>
   <tbody>
     <% @taskapps.each do |taskapp| %>
-      <tr>
-        <td><%= taskapp.title %></td>
-        <td><%= taskapp.status %></td>
-        <td><%= taskapp.due_date %></td>
-        <td class="action">
+      <tr class="taskapp-tr">
+        <td class="taskapp-td"><%= taskapp.title %></td>
+        <td class="taskapp-td"><%= taskapp.status %></td>
+        <td class="taskapp-td"><%= taskapp.due_date %></td>
+        <td class="taskapp-action taskapp-action-div">
           <%= link_to 'Show', category_taskapp_path(@category, taskapp) %>
           <%= link_to 'Edit', edit_category_taskapp_path(@category, taskapp) %>
           <%= button_to 'Delete', category_taskapp_path(@category, taskapp), method: :delete, data: { confirm: 'Are you sure?' } %>
@@ -23,3 +24,4 @@
     <% end %>
   </tbody>
 </table>
+</div>
