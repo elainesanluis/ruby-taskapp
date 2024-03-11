@@ -16,7 +16,7 @@
             <table >
             <tbody class="category-actions-div">
               <tr>
-                <td><%= link_to category.name, category %></td>
+                <td><%= link_to category.name, category,class: "category-name" %></td>
               </tr>
               <tr class="category-actions">
                 <td ><%= link_to 'Edit', edit_category_path(category), class: "category-actions-link" %></td>
