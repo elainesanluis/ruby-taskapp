@@ -67,18 +67,27 @@ a.login-create {
     color: whitesmoke;
 }
 
-.login-h1 {
+.iquest {
     position: absolute;
-    top: 10%;
+    top:10%;
     left: 5%;
-    font-size: 85px;
+    font-size: 90px;
     right: 45%;
 }
 
 .login-h2 {
     position: absolute;
-    top:25%;
+    top: 20%;
+    left: 5%;
+    font-size: 85px;
+    right: 45%;
+}
+
+.login-h3 {
+    position: absolute;
+    top:40%;
     left: 5%;
     font-size: 40px;
     right: 45%;
 }
+
