@@ -4,7 +4,7 @@
   <h1 class="categories-index-h1">My Tasks</h1>
   <div class="view-task-new-category-div">
     <%= link_to 'View All Tasks', show_joined_table_categories_path, method: :get, class: "view-task-new-category" %>
-    <%= link_to 'New Category', new_category_path, class: "view-task-new-category"  %>
+    <%= link_to 'Add Category', new_category_path, class: "view-task-new-category"  %>
   </div>
   <br/>
   <div class="categories-index">
@@ -28,7 +28,7 @@
           <% end %>
         </div>
       <% else %>
-        <p>You have no category created.</p>
+        <p class="no-category">Please add a category.</p>
       <% end %>
     </div>
   </div>

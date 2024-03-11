@@ -47,6 +47,7 @@
   
   .no-category {
     color: gray;
+    text-align: center;
   }
   
   .categories-row {
