@@ -1,12 +1,14 @@
 .categories-index-div {
     position: absolute;
     top: 10%;
-    left: 50%;
-    transform: translate(-50%,10%);
+    left: 1%;
+    right: 1%;
     display: flex;
+    max-width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 50;
   }
   
   .view-task-new-category-div {

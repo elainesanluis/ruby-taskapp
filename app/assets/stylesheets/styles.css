@@ -9,7 +9,7 @@
 }
 
 .login {
-    position: absolute;
+    position: fixed;
     top: 3%;
     right: 2%;
     left: 70%;

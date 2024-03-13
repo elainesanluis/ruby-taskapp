@@ -11,9 +11,21 @@ class CategoriesTest < ApplicationSystemTestCase
       test "visiting the index" do
         visit categories_url
 
-        assert_selector "h1", text: "My Tasks"
-        assert_link "Add Category", href: new_category_path  
+        assert_selector "h1", text: "My Tasks"  
       end
+
+      test "creating a new category" do
+        visit categories_url
+        
+        assert_link "Add Category", href: new_category_path
+      end
+
+      test "delete a category" do
+        visit categories_url
+        
+        assert_link "Delete", href: new_category_path
+      end
+    
     
 
       private
