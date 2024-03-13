@@ -53,7 +53,7 @@ body {
     font-weight: 800;
 }
 
-.logout, .profile {
+.logout {
     font-size: 20px;
     border-radius: 20px;
     background-color: rgb(65, 49, 64);
@@ -61,6 +61,18 @@ body {
     box-shadow: 2px 2px 2px rgb(104, 102, 102);
     padding: 10px 20px;
     width: 200px;
+}
+
+a.profile {
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgb(65, 49, 64);
+    color: white;
+    box-shadow: 2px 2px 2px rgb(104, 102, 102);
+    padding: 8px 20px;
+    width: 200px;
+    text-align: center;
+    border: 1px solid black;
 }
 
 .login-header {
@@ -80,8 +92,4 @@ body {
     text-shadow: 2px 2px 5px rgb(56, 53, 53);
     font-size: 40px;
     color: rgb(238, 226, 226);
-}
-
-.login-border-1 {
-    
 }

@@ -18,6 +18,7 @@ class TaskappsController < ApplicationController
   end
 
   def create
+    @category = current_user.categories.find(params[:category_id])
     @taskapp = @category.taskapps.build(taskapp_params)
     if @taskapp.save
       redirect_to category_taskapps_path(@category), notice: 'Task created!'
@@ -50,11 +51,14 @@ class TaskappsController < ApplicationController
   end
 
   def set_taskapp
-    @taskapp = if params[:id] == "due"
-      nil
-   else
-      @category.taskapps.find(params[:id])
-   end
+  #   @taskapp = if params[:id] == "due"
+  #     nil
+  #  else
+  #     @category.taskapps.find(params[:id])
+  #  end
+    @taskapp = @category.taskapps.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    redirect_to category_taskapps_path(@category), alert: 'Taskapp not found'
   end
 
   def taskapp_params

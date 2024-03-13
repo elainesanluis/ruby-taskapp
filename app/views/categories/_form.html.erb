@@ -1,21 +1,22 @@
 <div class="new-category-form">
   <%= form_with(model: @category, local: true) do |form| %>
-    <% if @category.errors.any? %>
+    <% if form.errors.any? %>
       <div id="error_explanation">
-        <h2><%= pluralize(@category.errors.count, 'error') %> prohibited this category from being saved:</h2>
+        <h2><%= pluralize(form.errors.count, 'error') %> prohibited this category from being saved:</h2>
         <ul>
-          <% @category.errors.full_messages.each do |message| %>
+          <% form.errors.full_messages.each do |message| %>
             <li><%= message %></li>
           <% end %>
         </ul>
       </div>
     <% end %>
-
+    <%= form.hidden_field :user_id, value: current_user.id %>
     <div class="field">
       <%= form.label :name, class: "categories-form-label" %>
       <%= form.text_field :name, id: :category_name, class: "categories-form-label", required: true %>
     </div>
     <br>
+    
     <div class="actions">
       <%= form.submit "Create Category", class: "categories-form-submit" %>
     </div>
