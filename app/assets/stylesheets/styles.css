@@ -30,7 +30,7 @@ body {
 }
 
 .notice {
-    position: absolute;
+    position: fixed;
     bottom: 2%;
     right: 2%;
     box-shadow: 2px 2px 2px 2px gray;
@@ -42,7 +42,7 @@ body {
 }
 
 .alert {
-    position: absolute;
+    position: fixed;
     bottom: 2%;
     right: 2%;
     box-shadow: 2px 2px 2px 2px gray;
