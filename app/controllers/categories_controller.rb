@@ -17,7 +17,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    if defined?(@show_joined_table_view) && @show_joined_table_view
+    if defined?(@show_joined_table_view) 
       render 'view-all'
     elsif defined?(@category)
       @taskapps = @category.taskapps
@@ -71,6 +71,8 @@ class CategoriesController < ApplicationController
     else
       @category = current_user.categories.find(params[:id])
     end
+  rescue ActiveRecord::RecordNotFound
+    redirect_to categories_path, alert: 'Category not found'  
   end
 
   def category_params

@@ -51,11 +51,6 @@ class TaskappsController < ApplicationController
   end
 
   def set_taskapp
-  #   @taskapp = if params[:id] == "due"
-  #     nil
-  #  else
-  #     @category.taskapps.find(params[:id])
-  #  end
     @taskapp = @category.taskapps.find(params[:id])
   rescue ActiveRecord::RecordNotFound
     redirect_to category_taskapps_path(@category), alert: 'Taskapp not found'
