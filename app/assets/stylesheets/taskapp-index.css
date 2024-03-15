@@ -16,6 +16,10 @@
     gap: 5px;
 }
 
+.taskapp-action-div:hover {
+    background-color: rgb(58, 56, 56);
+}
+
 .taskapp-index-container {
     display: flex;
     flex-direction: column;
@@ -28,4 +32,21 @@
 .taskapp-th {
     background-color: rgb(39, 35, 35);
     color: rgb(243, 234, 234);
+}
+
+.taskapp-action-link {
+    color: #379e9e;
+    font-weight: 800;
+}
+
+.taskapp-action-link:hover {
+    color: white;
+}
+
+.taskapp-action-delete {
+    border: none;
+    background-color: inherit;
+    font-family: 'Poppins', sans-serif;   
+    font-size: 15px; 
+    padding: 0;
 }
