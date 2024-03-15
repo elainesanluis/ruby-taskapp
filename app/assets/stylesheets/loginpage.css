@@ -21,12 +21,14 @@
     background-color: rgb(101, 60, 139);
     padding: 5px;
     border-radius: 5px;
-    color: black;
+    color: white;
     border: none;
+    font-family: 'Poppins', sans-serif;  
 }
 
 .login-box {
     width: 120px;
+    font-family: 'Poppins', sans-serif;  
 }
 
 .login-label {
@@ -85,7 +87,7 @@ a.login-create {
 
 .login-h3 {
     position: absolute;
-    top:40%;
+    top:38%;
     left: 5%;
     font-size: 40px;
     right: 45%;

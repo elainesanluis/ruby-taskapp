@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: [:attribute])
   end
 
-  # Redirect to the categories index after sign-in
+  
   def after_sign_in_path_for(resource)
     categories_path
   end
