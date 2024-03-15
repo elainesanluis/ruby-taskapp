@@ -17,23 +17,23 @@
   <%= form.hidden_field :category_id, value: @category.id %>
 
   <div class="field">
-    <%= form.label :title, class: "taskapp-form-label" %>
-    <%= form.text_field :title, required: true %>
+    <%= form.label :title, class: "taskapp-form-label" %><br/>
+    <%= form.text_field :title, required: true, class: "taskapp-form-input" %>
   </div>
   <br/>
   <div class="field">
-    <%= form.label :description, class: "taskapp-form-label" %>
-    <%= form.text_area :description, required: true %>
+    <%= form.label :description, class: "taskapp-form-label" %><br/>
+    <%= form.text_area :description, required: true, class: "taskapp-form-input"  %>
   </div>
   <br/>
   <div class="field">
-    <%= form.label :status, class: "taskapp-form-label" %>
-    <%= form.select :status, ['Not Started', 'In Progress', 'Completed'], { required: true }, class: 'form-control' %>
+    <%= form.label :status, class: "taskapp-form-label" %><br/>
+    <%= form.select :status, ['Not Started', 'In Progress', 'Completed'], { required: true }, class: "form-control taskapp-form-input" %>
   </div>
   <br/>
   <div class="field">
-    <%= form.label :due_date, class: "taskapp-form-label" %>
-    <%= form.date_field :due_date, required: true %>
+    <%= form.label :due_date, class: "taskapp-form-label" %><br/>
+    <%= form.date_field :due_date, required: true, class: "taskapp-form-input"  %>
   </div>
   <br/>
   <div>

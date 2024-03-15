@@ -85,8 +85,11 @@
     color: black;
   }
   
-  .category-actions-link {
-    background-color: none;
+  button.category-actions-link {
+    background-color: white;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;    
   }
 
   a.category-name {

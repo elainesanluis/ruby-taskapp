@@ -2,7 +2,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -40%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,6 +16,7 @@
 
 .taskapp-form-label {
     font-weight: 800;
+    font-size: 20px;
 }
 
 .taskapp-form-submit {
@@ -26,4 +27,10 @@
     font-size: 20px;
     padding: 5px 10px;
     width: 200px;
+}
+
+.taskapp-form-input {
+    height: 30px;
+    width: 400px;
+    font-family: 'Poppins', sans-serif;
 }
