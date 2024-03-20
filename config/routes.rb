@@ -7,9 +7,6 @@ Rails.application.routes.draw do
 
   resources :categories do
     resources :taskapps do
-      member do
-        patch 'complete', to: 'taskapps#complete', as: 'complete'
-      end
     end
     get 'show_joined_table', to: 'categories#alltasks', on: :collection
   end
