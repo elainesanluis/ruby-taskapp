@@ -11,7 +11,4 @@ Rails.application.routes.draw do
     get 'show_joined_table', to: 'categories#alltasks', on: :collection
   end
 
-  get "up" => "rails/health#show", as: :rails_health_check
-
-
 end
