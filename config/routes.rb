@@ -10,12 +10,6 @@ Rails.application.routes.draw do
     end
     get 'show_joined_table', to: 'categories#alltasks', on: :collection
   end
- 
-  resources :taskapps do
-    collection do
-      get 'due', to: 'taskapps#due', as: :due_tasks
-    end
-  end
 
   get "up" => "rails/health#show", as: :rails_health_check
 
