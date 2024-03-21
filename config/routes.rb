@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-
+  
   devise_scope :user do
     root to: "devise/sessions#new"
   end
@@ -10,5 +10,6 @@ Rails.application.routes.draw do
     end
     get 'show_joined_table', to: 'categories#alltasks', on: :collection
   end
+
 
 end
